@@ -1,1 +1,5 @@
 一个python线程大约消耗50k的内存，如果开启成千上万个线程会失败。
+如果我们使用并发Socket的方式同时采取成千上万的操作，我们会在耗尽Socket之前达到我们能使用的线程的上限
+the cap=the capacity
+orders of magnitude higher：数量级的提高
+使用线程的缺陷：大部分操作系统还能创建Socket，但是不能再继续创建线程了。
